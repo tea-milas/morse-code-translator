@@ -1,0 +1,25 @@
+@import "./_variables";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 100%;
+    background-color: $blue;
+    position: relative;
+    overflow: hidden;
+}
+
+#wave1 {
+    position: absolute;
+    top: -9%;
+}
+#wave {
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    right: 0;
+}

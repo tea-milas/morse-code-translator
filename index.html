@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse code translator</title>
+    <script type="module" src="script.js" async defer></script>
+    <link rel="stylesheet" href="./assets/style/styles.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <svg id="wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#BC9082" fill-opacity="0.8" d="M0,288L80,266.7C160,245,320,203,480,202.7C640,203,800,245,960,224C1120,203,1280,117,1360,74.7L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+
+    <section id="translator">
+        <h1>Translate</h1>
+        <section id="translator__language">
+            <div id="firstLang" id="engToMorse" class="language">English</div>
+            <div id="swap"><span id="swap" class="iconify" data-icon="ic:round-swap-horizontal-circle" data-inline="false"></span>
+                </div>
+            <div id="secondLang" id="morseToEng" class="language">Morse code</div>
+        </section>
+
+        <div id="input-output">
+            <input type="text" id="input" maxlength="30"></input>
+            <div id="output">
+                <p id="output__text"></p>
+            
+            </div>
+        </div>
+
+        <div id="buttons">
+            <button id="translate__button" class="btn">TRANSLATE</button>
+            <button id="clear__button"  class="btn">CLEAR</button>
+        </div>
+    </section>
+    
+    <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 330"><path fill="#BC9082" fill-opacity="1" d="M0,320L60,288C120,256,240,192,360,160C480,128,600,128,720,106.7C840,85,960,43,1080,21.3C1200,0,1320,0,1380,0L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+</body>
+</html>
