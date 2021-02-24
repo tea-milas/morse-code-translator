@@ -18,13 +18,12 @@
     }
 }
 
-
-
 #translator__language {
     width: 80%;
     margin: 5% auto 4% auto;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 
     .language {
         color: $blue;
@@ -37,7 +36,7 @@
     
         #swap {
             font-size: xx-large;
-            color: $pinkish;
+            
         }
 
         #swap:active {
@@ -47,10 +46,13 @@
 
         #swap:hover {
             color: $light-dusty;
-        }
+        }   
     }
 }
 
+.iconify {
+    color: $pinkish;
+}
 
 #input-output {
     width: 90%;
@@ -84,59 +86,65 @@
     }
 }
 
-@media only screen and (max-width: 1095px) {
-    #translator__language {
+@media only screen and (min-width: 1095px) {
+    #translator {
+        height: 90vh;
         width: 80%;
-        margin: 5% auto 4% auto;
-        display: flex;
-        justify-content: space-evenly;
+        margin: 5vh auto;
     
-        .language {
-            color: $blue;
-            width: 30%;
-            font-size: 25px;
-        
-            #secondLang {
-                text-align: end;
-            }
-        
-            #swap {
-                font-size: xx-large;
-                color: $pinkish;
-            }
-    
-            #swap:active {
-                transform: scale(0.9);
-                color: $dusty;
-            }
-    
-            #swap:hover {
-                color: $light-dusty;
-            }
+        h1 {
+            margin-top: 2%;
+            font-size: 40px;
         }
     }
     
+    #translator__language {
+        width: 90%;
+        margin: 3% auto;
+    
+        .language {
+            width: 25%;
+            font-size: 30px;
+           
+        }
+        #secondLang {
+            text-align: end;
+        }
+
+        #swap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+    }
+    .iconify {
+        font-size: 35px;
+    }
     
     #input-output {
         width: 90%;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: space-evenly;
         align-items: center;
         margin: 10px auto;
     
         #input {
-            width: 90%;
-            height: 25vh ;
-            font-size: 25px;
-
+            width: 40%;
+            height: 35vh ;
+            font-size: 35px;
         }
         
         #output {
-            width: 90%;
-            height: 25vh ;
-            font-size: 25px;
-            margin-top: 5%;
+            background-color: $grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 40%;
+            height: 35vh ;
+            font-size: 35px;
+            margin: 0;
         }
     }
 }

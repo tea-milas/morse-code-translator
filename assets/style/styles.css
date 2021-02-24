@@ -45,6 +45,7 @@ body {
   margin: 5% auto 4% auto;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 #translator__language .language {
   color: #03113D;
@@ -56,7 +57,6 @@ body {
 }
 #translator__language .language #swap {
   font-size: xx-large;
-  color: #c67e7e;
 }
 #translator__language .language #swap:active {
   transform: scale(0.9);
@@ -64,6 +64,10 @@ body {
 }
 #translator__language .language #swap:hover {
   color: #e6d3cd;
+}
+
+.iconify {
+  color: #c67e7e;
 }
 
 #input-output {
@@ -96,51 +100,60 @@ body {
   border-radius: 5px;
 }
 
-@media only screen and (max-width: 1095px) {
-  #translator__language {
+@media only screen and (min-width: 1095px) {
+  #translator {
+    height: 90vh;
     width: 80%;
-    margin: 5% auto 4% auto;
-    display: flex;
-    justify-content: space-evenly;
+    margin: 5vh auto;
+  }
+  #translator h1 {
+    margin-top: 2%;
+    font-size: 40px;
+  }
+
+  #translator__language {
+    width: 90%;
+    margin: 3% auto;
   }
   #translator__language .language {
-    color: #03113D;
-    width: 30%;
-    font-size: 25px;
+    width: 25%;
+    font-size: 30px;
   }
-  #translator__language .language #secondLang {
+  #translator__language #secondLang {
     text-align: end;
   }
-  #translator__language .language #swap {
-    font-size: xx-large;
-    color: #c67e7e;
+  #translator__language #swap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  #translator__language .language #swap:active {
-    transform: scale(0.9);
-    color: #BC9082;
-  }
-  #translator__language .language #swap:hover {
-    color: #e6d3cd;
+
+  .iconify {
+    font-size: 35px;
   }
 
   #input-output {
     width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     margin: 10px auto;
   }
   #input-output #input {
-    width: 90%;
-    height: 25vh;
-    font-size: 25px;
+    width: 40%;
+    height: 35vh;
+    font-size: 35px;
   }
   #input-output #output {
-    width: 90%;
-    height: 25vh;
-    font-size: 25px;
-    margin-top: 5%;
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    height: 35vh;
+    font-size: 35px;
+    margin: 0;
   }
 }
 @media only screen and (max-width: 415px) {
