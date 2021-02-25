@@ -29,30 +29,30 @@
         color: $blue;
         width: 30%;
         font-size: 25px;
-    
-        #secondLang {
-            text-align: end;
-        }
-    
-        #swap {
-            font-size: xx-large;
-            
-        }
-
-        #swap:active {
-            transform: scale(0.9);
-            color: $dusty;
-        }
-
-        #swap:hover {
-            color: $light-dusty;
-        }   
     }
+    #secondLang {
+        text-align: end;
+    }
+
+    #swap {
+        font-size: xx-large;
+        color: $pinkish;
+        background-color: white;
+        border: white;
+        
+    }
+
+    #swap:active {
+        transform: scale(0.9);
+        color: $dusty;
+    }
+
+    #swap:hover {
+        color: $light-dusty;
+    }   
 }
 
-.iconify {
-    color: $pinkish;
-}
+
 
 #input-output {
     width: 90%;
@@ -84,6 +84,34 @@
         margin-top: 5%;
         border-radius: 5px;
     }
+
+    .sounds {
+        position: absolute;
+        margin-top: 15px;
+        margin-bottom: 0;
+        font-size: x-large;
+    }
+
+    .sounds:active {
+        transform: scale(0.9);
+    }
+
+    .sound_left {
+        color: $blue;
+        background-color: $dusty;
+        border:$dusty;
+        top: 43%;
+        
+    }
+
+    .sound_right {
+        color: $pinkish;
+        border: $grey;
+        background-color: $grey;
+        bottom: 20%;
+    }
+
+    
 }
 
 @media only screen and (min-width: 1095px) {
@@ -115,11 +143,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 35px;
         }
     
-    }
-    .iconify {
-        font-size: 35px;
     }
     
     #input-output {
@@ -136,16 +162,28 @@
         }
         
         #output {
-            background-color: $grey;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
             width: 40%;
             height: 35vh ;
             font-size: 35px;
             margin: 0;
         }
+
+        .sounds {
+            position: absolute;
+            margin-top: 15px;
+            font-size: 25px;
+        }
+
+        .sound_left {
+            bottom: 31%;
+            left: 12%;
+        }
+
+        .sound_right {
+            bottom: 31%;
+            right: 12%;
+        }
+
     }
 }
 
@@ -160,6 +198,16 @@
     }
     #outout {
         font-size: 13px;
+    }
+    .sounds {
+        font-size: medium;
+    }
+    .sound_left {
+        top: 45%;
+    }
+
+    .sound_right {
+        bottom: 17%;
     }
 
 }

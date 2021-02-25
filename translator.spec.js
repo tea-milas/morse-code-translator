@@ -54,13 +54,6 @@ it ("Should translate j to .---", () => {
     expect(result).toBe(".---")
 })
 
-//test lots of false inputs
-
-it ("Should translate < to false", () => {
-    const result = validCharacterEng(["<"]);
-    expect(result).toBe(false)
-})
-
 it ("Should translate = to false", () => {
     const result = validCharacterEng(["="]);
     expect(result).toBe(false)
@@ -86,71 +79,57 @@ it ("Should translate % to false", () => {
     expect(result).toBe(false)
 })
 
-///test null/empty string input
-
 it ("Should translate empty string to empty", () => {
     const result = translateEnglishToMorse("");
     expect(result).toBe("")
 })
 
 // MORSE TO ENGLISH
-//test lots of valid inputs
+
 it ("Should translate .- to a", () => {
     const result = translateMorseToEnglish([".-"]);
-    expect(result).toBe("a")
+    expect(result).toStrictEqual(["a"])
 })
 
 it ("Should translate -... to b", () => {
     const result = translateMorseToEnglish(["-..."]);
-    expect(result).toBe("b")
+    expect(result).toStrictEqual(["b"])
 })
 
 it ("Should translate  -.-. to c", () => {
     const result = translateMorseToEnglish(["-.-."]);
-    expect(result).toBe("c")
+    expect(result).toStrictEqual(["c"])
 })
 
 it ("Should translate -.. to d", () => {
     const result = translateMorseToEnglish(["-.."]);
-    expect(result).toBe("d")
+    expect(result).toStrictEqual(["d"])
 })
 
 it ("Should translate . to e", () => {
     const result = translateMorseToEnglish(["."]);
-    expect(result).toBe("e")
+    expect(result).toStrictEqual(["e"])
 })
 
 it ("Should translate ..-. to f", () => {
     const result = translateMorseToEnglish(["..-."]);
-    expect(result).toBe("f")
+    expect(result).toStrictEqual(["f"])
 })
 
 it ("Should translate --. to g", () => {
     const result = translateMorseToEnglish(["--."]);
-    expect(result).toBe("g")
+    expect(result).toStrictEqual(["g"])
 })
 
 it ("Should translate .... to h", () => {
     const result = translateMorseToEnglish(["...."]);
-    expect(result).toBe("h")
+    expect(result).toStrictEqual(["h"])
 })
 
 it ("Should translate .. to i", () => {
     const result = translateMorseToEnglish([".."]);
-    expect(result).toBe("i")
+    expect(result).toStrictEqual(["i"])
 })
-
-it ("Should translate .--- to j", () => {
-    const result = translateMorseToEnglish([".---"]);
-    expect(result).toBe("j")
-})
-
-it ("Should translate -.- to k", () => {
-    const result = translateMorseToEnglish(["-.-"]);
-    expect(result).toBe("k")
-})
-
-//test lots of false inputs
 
 it ("Should check if < is valid and return false", () => {
     const result = validCharacterMorse(["<"]);
@@ -190,11 +169,4 @@ it ("Should translate 1 to false", () => {
 it ("Should check if h is valid and return false", () => {
     const result = validCharacterMorse(["h"]);
     expect(result).toBe(false)
-})
-
-///test null/empty string input
-
-it ("Should translate empty array to empty", () => {
-    const result = translateMorseToEnglish([""]);
-    expect(result).toBe("")
 })

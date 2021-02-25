@@ -52,22 +52,21 @@ body {
   width: 30%;
   font-size: 25px;
 }
-#translator__language .language #secondLang {
+#translator__language #secondLang {
   text-align: end;
 }
-#translator__language .language #swap {
+#translator__language #swap {
   font-size: xx-large;
+  color: #c67e7e;
+  background-color: white;
+  border: white;
 }
-#translator__language .language #swap:active {
+#translator__language #swap:active {
   transform: scale(0.9);
   color: #BC9082;
 }
-#translator__language .language #swap:hover {
+#translator__language #swap:hover {
   color: #e6d3cd;
-}
-
-.iconify {
-  color: #c67e7e;
 }
 
 #input-output {
@@ -99,6 +98,27 @@ body {
   margin-top: 5%;
   border-radius: 5px;
 }
+#input-output .sounds {
+  position: absolute;
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: x-large;
+}
+#input-output .sounds:active {
+  transform: scale(0.9);
+}
+#input-output .sound_left {
+  color: #03113D;
+  background-color: #BC9082;
+  border: #BC9082;
+  top: 43%;
+}
+#input-output .sound_right {
+  color: #c67e7e;
+  border: #C4C4C4;
+  background-color: #C4C4C4;
+  bottom: 20%;
+}
 
 @media only screen and (min-width: 1095px) {
   #translator {
@@ -126,9 +146,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .iconify {
     font-size: 35px;
   }
 
@@ -145,15 +162,23 @@ body {
     font-size: 35px;
   }
   #input-output #output {
-    background-color: #C4C4C4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     width: 40%;
     height: 35vh;
     font-size: 35px;
     margin: 0;
+  }
+  #input-output .sounds {
+    position: absolute;
+    margin-top: 15px;
+    font-size: 25px;
+  }
+  #input-output .sound_left {
+    bottom: 31%;
+    left: 12%;
+  }
+  #input-output .sound_right {
+    bottom: 31%;
+    right: 12%;
   }
 }
 @media only screen and (max-width: 415px) {
@@ -169,12 +194,24 @@ body {
   #outout {
     font-size: 13px;
   }
+
+  .sounds {
+    font-size: medium;
+  }
+
+  .sound_left {
+    top: 45%;
+  }
+
+  .sound_right {
+    bottom: 17%;
+  }
 }
 #buttons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 3%;
+  margin-top: 1%;
 }
 #buttons .btn {
   text-align: center;
@@ -193,7 +230,7 @@ body {
   color: #BC9082;
 }
 
-@media only screen and (max-width: 1095px) {
+@media only screen and (min-width: 1095px) {
   #buttons {
     margin-top: 5%;
   }
