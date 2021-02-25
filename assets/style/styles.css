@@ -111,7 +111,7 @@ body {
   color: #03113D;
   background-color: #BC9082;
   border: #BC9082;
-  top: 43%;
+  bottom: 53%;
 }
 #input-output .sound_right {
   color: #c67e7e;
@@ -187,24 +187,20 @@ body {
     font-size: 15px;
   }
 
-  #input {
+  #input-output #input {
     font-size: 18px;
   }
-
-  #outout {
+  #input-output #outout {
     font-size: 13px;
   }
-
-  .sounds {
+  #input-output .sounds {
     font-size: medium;
   }
-
-  .sound_left {
-    top: 45%;
+  #input-output .sound_left {
+    bottom: 49%;
   }
-
-  .sound_right {
-    bottom: 17%;
+  #input-output .sound_right {
+    bottom: 18%;
   }
 }
 #buttons {

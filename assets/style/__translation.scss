@@ -100,7 +100,7 @@
         color: $blue;
         background-color: $dusty;
         border:$dusty;
-        top: 43%;
+        bottom: 53%;
         
     }
 
@@ -192,22 +192,24 @@
         width: 33%;
         font-size: 15px;
     }
-
-    #input {
-        font-size: 18px;
+    #input-output {
+        #input {
+            font-size: 18px;
+        }
+        #outout {
+            font-size: 13px;
+        }
+        .sounds {
+            font-size: medium;
+        }
+        .sound_left {
+            bottom: 49%;
+        }
+    
+        .sound_right {
+            bottom: 18%;
+        }
     }
-    #outout {
-        font-size: 13px;
-    }
-    .sounds {
-        font-size: medium;
-    }
-    .sound_left {
-        top: 45%;
-    }
-
-    .sound_right {
-        bottom: 17%;
-    }
+    
 
 }
