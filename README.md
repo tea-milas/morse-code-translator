@@ -18,6 +18,7 @@ It's made with JS and tested with Jest.
  * Write in the input field and press translate. 
  * If you'd like to hear the morse code or english pronounciation click on the sound button.
  * To clear both fields press clear. 
+ * To swap between languages press the swap button.
  
  ## JS module
  File named translator.js is a module. It consists of translate functions and verification functions. 
